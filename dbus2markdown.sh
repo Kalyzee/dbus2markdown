@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 
-XSL_FILE='./dbus2markdown.xsl'
+CURRENT_DIR="${0%/*}"
+XSL_FILE="$CURRENT_DIR"/dbus2markdown.xsl
 IN_XML_FILE=$1
 OUT_MARKDOWN_FILE=$2
 
